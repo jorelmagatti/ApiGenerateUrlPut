@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Service.GenerateUrlPut/1.0.0": {
+        "runtime": {
+          "Service.GenerateUrlPut.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Service.GenerateUrlPut/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
