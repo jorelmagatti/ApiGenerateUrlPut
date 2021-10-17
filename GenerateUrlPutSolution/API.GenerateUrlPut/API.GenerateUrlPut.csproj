@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Model.GenerateUrl\Model.GenerateUrl.csproj" />
     <ProjectReference Include="..\Service.GenerateUrlPut\Service.GenerateUrlPut.csproj" />
   </ItemGroup>
 
