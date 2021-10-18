@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Primitives;
 using Model.GenerateUrl;
 using Services.GenerateUrlPut.Interfaces;
 using System;
@@ -93,6 +94,57 @@ namespace API.GenerateUrlPut.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpPut]
+        [Route("v1/PutFileForUploadURL")]
+        public IActionResult PutFileForUploadURL()
+        {
+            try
+            {
+                _logger.LogInformation("Iniciando processo de captura dos parametros referente processo upload");
+                IFormFileCollection files = Request.Form.Files;
+                string url = GetFormPostString("url");
+
+                if (files != null && !string.IsNullOrEmpty(url))
+                {
+                    if (files.Count() > 0)
+                    {
+                        var retorno = _IGenerateUrlAWSs3Service.ExecuteprocessUpload(files, url);
+                        if (retorno.Trim().ToLower().Contains("ok"))
+                            return Ok(retorno);
+                        else
+                            return NotFound(retorno);
+                    }
+                    else
+                    {
+                        _logger.LogWarning($"Falha no recebimento dos parametros necessários");
+                        return BadRequest("Falha no recebimento dos parametros necessários");
+                    }
+                }
+                else
+                {
+                    _logger.LogWarning($"Falha no recebimento dos parametros necessários");
+                    return BadRequest("Falha no recebimento dos parametros necessários");
+                }
+
+                #region Internal Methods
+                string GetFormPostString(string formControlName)
+                {
+                    string response = string.Empty;
+                    StringValues formValues;
+                    if (Request.Form.TryGetValue(formControlName, out formValues))
+                        response = formValues.First().ToString();
+                    return response;
+                }
+                #endregion
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex.Message);
+                return BadRequest(ex.Message);
+            }
+        }
+
         #endregion
 
     }

@@ -1,0 +1,12 @@
+C:\Projetos\ApiGenerateUrlPut\GenerateUrlPutSolution\Model.GenerateUrl\bin\Debug\net5.0\Model.GenerateUrl.deps.json
+C:\Projetos\ApiGenerateUrlPut\GenerateUrlPutSolution\Model.GenerateUrl\bin\Debug\net5.0\Model.GenerateUrl.dll
+C:\Projetos\ApiGenerateUrlPut\GenerateUrlPutSolution\Model.GenerateUrl\bin\Debug\net5.0\ref\Model.GenerateUrl.dll
+C:\Projetos\ApiGenerateUrlPut\GenerateUrlPutSolution\Model.GenerateUrl\bin\Debug\net5.0\Model.GenerateUrl.pdb
+C:\Projetos\ApiGenerateUrlPut\GenerateUrlPutSolution\Model.GenerateUrl\obj\Debug\net5.0\Model.GenerateUrl.csproj.AssemblyReference.cache
+C:\Projetos\ApiGenerateUrlPut\GenerateUrlPutSolution\Model.GenerateUrl\obj\Debug\net5.0\Model.GenerateUrl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\ApiGenerateUrlPut\GenerateUrlPutSolution\Model.GenerateUrl\obj\Debug\net5.0\Model.GenerateUrl.AssemblyInfoInputs.cache
+C:\Projetos\ApiGenerateUrlPut\GenerateUrlPutSolution\Model.GenerateUrl\obj\Debug\net5.0\Model.GenerateUrl.AssemblyInfo.cs
+C:\Projetos\ApiGenerateUrlPut\GenerateUrlPutSolution\Model.GenerateUrl\obj\Debug\net5.0\Model.GenerateUrl.csproj.CoreCompileInputs.cache
+C:\Projetos\ApiGenerateUrlPut\GenerateUrlPutSolution\Model.GenerateUrl\obj\Debug\net5.0\Model.GenerateUrl.dll
+C:\Projetos\ApiGenerateUrlPut\GenerateUrlPutSolution\Model.GenerateUrl\obj\Debug\net5.0\ref\Model.GenerateUrl.dll
+C:\Projetos\ApiGenerateUrlPut\GenerateUrlPutSolution\Model.GenerateUrl\obj\Debug\net5.0\Model.GenerateUrl.pdb
